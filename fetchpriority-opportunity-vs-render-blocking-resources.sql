@@ -72,11 +72,9 @@ FROM (
     )
   )
   WHERE
-    number_of_render_blocking_scripts > 0 AND (
-      LOWER(protocol) = 'http/2' OR
-      LOWER(protocol) = 'http/3' OR
-      LOWER(protocol) = 'h3'
-    )
+    LOWER(protocol) = 'http/2' OR
+    LOWER(protocol) = 'http/3' OR
+    LOWER(protocol) = 'h3'
 )
 GROUP BY
   device,
