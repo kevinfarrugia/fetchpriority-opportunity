@@ -1,0 +1,11 @@
+device,percentile,opportunity_ms,total
+desktop,10,1,12089865
+desktop,25,2,12089865
+desktop,50,51,12089865
+desktop,75,181,12089865
+desktop,90,411,12089865
+mobile,10,1,15642560
+mobile,25,5,15642560
+mobile,50,98,15642560
+mobile,75,457,15642560
+mobile,90,810,15642560
