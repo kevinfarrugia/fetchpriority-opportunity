@@ -67,7 +67,8 @@ FROM (
       WHEN opportunity_ms <= 700 THEN 700
       WHEN opportunity_ms <= 800 THEN 800
       WHEN opportunity_ms <= 900 THEN 900
-      ELSE 1000
+      WHEN opportunity_ms <= 1000 THEN 1000
+      ELSE 1100
     END AS opportunity_ms
   FROM (
     SELECT
